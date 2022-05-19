@@ -66,6 +66,7 @@ force_subs = os.getenv("forcesubs", "CheemsxBots")
 async def play(_, message: Message):
     await message.delete()
     chat_id = message.chat.id 
+    user_id = message.from_user.id
     updates_channel = force_subs
     if updates_channel:
         try:
