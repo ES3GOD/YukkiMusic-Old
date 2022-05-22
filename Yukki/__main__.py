@@ -14,7 +14,7 @@ from Yukki.YukkiUtilities.database.functions import clean_restart_stage
 from Yukki.YukkiUtilities.database.queue import (get_active_chats, remove_active_chat)
 from Yukki.config import API_ID, API_HASH, BOT_TOKEN, MONGO_DB_URI, SUDO_USERS, LOG_GROUP_ID
 from Yukki.config import AUTO_LEAVE
-from Yukki.MusicUtilities.helpers.autoleave import leave_from_inactive_call
+from Yukki.YukkiUtilities.helpers.autoleave import leave_from_inactive_call
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 scheduler = AsyncIOScheduler()
